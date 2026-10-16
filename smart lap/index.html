@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LUMI — Smart Lamp</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="app">
+      <nav class="navbar">
+        <a href="#" class="brand">
+          <span class="brand-icon">✳</span>
+          LUMI
+        </a>
+        <span class="device-online">
+          <span class="online-dot"></span>
+          DEVICE ONLINE
+        </span>
+      </nav>
+
+      <header class="hero">
+        <p class="eyebrow">SMART HOME / DEVICE 01</p>
+        <h1>Smart Lamp<span>.</span></h1>
+        <p class="subtitle">Your light. Your atmosphere.</p>
+      </header>
+
+      <section class="lamp-card">
+        <div class="lamp-visual" id="lampu">
+          <div class="glow"></div>
+          <div class="lamp-shade"></div>
+          <div class="lamp-neck"></div>
+          <div class="lamp-base"></div>
+        </div>
+
+        <div class="lamp-info">
+          <span class="status-indicator" id="status-dot"></span>
+          <h2 id="status">Lamp is OFF</h2>
+          <p id="description">Ready to illuminate your space</p>
+        </div>
+
+        <button class="power-button" id="tombol" type="button">
+          <span>⏻</span>
+          <span id="button-text">Turn on lamp</span>
+        </button>
+
+        <div class="stats">
+          <article class="stat-card">
+            <span class="stat-icon">↗</span>
+            <p class="stat-label">ACTIVATIONS</p>
+            <h3 id="jumlah">0</h3>
+            <p class="stat-caption">Times switched on</p>
+          </article>
+
+          <article class="stat-card">
+            <span class="stat-icon">◷</span>
+            <p class="stat-label">AUTO-OFF TIMER</p>
+            <h3 id="timer-status">OFF</h3>
+            <p class="stat-caption" id="timer-caption">No timer running</p>
+          </article>
+        </div>
+      </section>
+
+      <footer>
+        <span>LUMI HOME SYSTEM</span>
+        <span>CONTROL PANEL v1.0</span>
+      </footer>
+    </main>
+  </body>
+</html>
