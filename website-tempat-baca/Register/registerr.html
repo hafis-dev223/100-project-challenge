@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prompt register</title>
+    <link rel="stylesheet" href="../css/halaman-Register.css" />
+  </head>
+  <body>
+    <div class="Prompt-login">
+      <div class="My-container">
+        <div class="halaman-judul">
+          <h1>Create You Login</h1>
+          <p>Join Mindly and make space for a batter</p>
+        </div>
+
+        <div class="halaman-input">
+          <input type="text" id="Username" placeholder="Username" />
+
+          <input type="email" id="Gmail" placeholder="Email" />
+
+          <input type="password" id="password" placeholder="password" />
+
+          <span id="Eye"
+            ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#858585" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye preview-icon">
+              <path vector-effect="non-scaling-stroke" d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" />
+              <circle vector-effect="non-scaling-stroke" cx="12" cy="12" r="3" /></svg
+          ></span>
+
+          <button id="Register">Register</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="Modal">
+      <div class="modal-container" id="overlay">
+        <div id="modal-content">
+          <h1 id="Kata">Succes</h1>
+
+
+          <button id="Login">Login</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../javascript/togglekemanan.js"></script>
+    <script src="../javascript/login.js"></script>
+  </body>
+</html>
