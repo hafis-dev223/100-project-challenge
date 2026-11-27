@@ -11,18 +11,92 @@
   display: none;
 }
 
-#Tombol-Masuk{
+#Tombol-Masuk {
   margin-right: 10px;
   padding: 12px 20px;
   border-radius: 30px;
   border: 1px solid;
   background-color: rgb(1, 64, 141);
   color: #ffffff;
+}
+
+.Kumpulan-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 3fr 1fr);
+  place-items: center;
+  margin-left: 12%;
+  gap: 20px;
+}
+
+.kotak {
+  border: 1px solid rgb(255, 255, 255);
+  grid-row: span 2;
+  padding: 10px;
+  width: 250px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.Kotak-1 {
+  background-color: rgb(130, 131, 132);
   
+}
+
+.Kotak-1 h1{
+  font-weight: 400;
+  margin-top: 30px;
+
+}
+
+.Kotak-2 {
+  background-color: rgb(1, 64, 141);
+  color: #ffffff;
+  
+}
+
+.Kotak-3{
+  background-color: rgb(5, 5, 5);
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Kotak-3 h1{
+  font-weight: 300;
+}
+
+.Kotak-3 h2{
+  font-size: 45px;
+  font-weight: 500;
+  color: #909090;
+
+}
+
+
+
+
+.container-hero {
+  margin: 20px auto 30px auto;
+  padding: 50px;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  overflow: hidden;
+  align-self: center;
+  border-radius: 35px;
+  background-size: cover;
+  width: 85rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(90deg, rgba(241, 245, 249, 0.92) 0%, rgba(241, 245, 249, 0.6) 40%, rgba(241, 245, 249, 0) 75%), url("/Level-1/project-01-manucfuturing/image/Hero.jpg");
 }
 
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #f2f2f2;
 }
 
 .Halaman-Judul {
@@ -42,6 +116,20 @@ body {
   text-decoration: none;
   color: black;
   transition: color 0.3s;
+}
+
+.Hero-Judul {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.Hero-Judul h1 {
+  font-size: 25px;
+  font-weight: 600;
 }
 
 .Nav-desktop a::before {
@@ -81,7 +169,31 @@ body {
 }
 
 .Nav-desktop li a:hover {
-  color: #0821ae;
+  color: #ffffffe4;
+}
+
+.button-hero {
+  position: absolute;
+  top: 47%;
+  display: flex;
+  gap: 20px;
+  left: 10%;
+}
+
+.button-hero #Btn-primary,
+#Btn-konsonan {
+  padding: 10px 15px;
+  border: 1px solid transparent;
+  border-radius: 50px;
+}
+
+#Btn-primary {
+  background-color: #ffffff;
+}
+
+#Btn-konsonan {
+  background: rgb(1, 64, 141);
+  color: #ffffff;
 }
 
 .Nav-desktop ul {
@@ -100,6 +212,7 @@ body {
   justify-self: center;
   margin-top: 20px;
   border-radius: 20px;
+
   background-color: rgb(254, 255, 255);
   box-shadow: 0 3px 8px rgb(224, 222, 222);
   align-items: center;
@@ -201,7 +314,72 @@ body {
     justify-content: space-between;
     border: 1px solid rgb(255, 255, 255);
     width: 98%;
+    position: fixed;
+    z-index: 1000;
     background-color: rgb(254, 255, 255);
     box-shadow: 0 3px 8px rgb(224, 222, 222);
+  }
+
+  .Hero {
+    display: flow-root;
+  }
+
+  .container-hero {
+    box-sizing: border-box;
+    width: calc(100% - 2rem);
+    min-height: clamp(30rem, 76vh, 40rem);
+    min-height: clamp(30rem, 76svh, 40rem);
+    margin: 88px auto 24px;
+    padding: 24px;
+    border-radius: 24px;
+    background-position: 62% center;
+    background-image: linear-gradient(90deg, rgba(241, 245, 249, 0.96) 0%, rgba(241, 245, 249, 0.82) 58%, rgba(241, 245, 249, 0.38) 100%), url("/Level-1/project-01-manucfuturing/image/Hero.jpg");
+  }
+
+  .Hero-Judul {
+    top: clamp(9.5rem, 25vh, 12.5rem);
+    left: 7vw;
+    right: 7vw;
+    gap: 14px;
+  }
+
+  .Hero-Judul h1 {
+    font-size: clamp(1.5rem, 7vw, 2rem);
+    line-height: 1.2;
+  }
+
+  .Hero-Judul p {
+    font-size: clamp(0.875rem, 3.8vw, 3rem);
+    line-height: 1.5;
+  }
+
+  .button-hero {
+    top: clamp(0rem, 45vh, 24rem);
+    left: 7vw;
+    right: 7vw;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .button-hero #Btn-primary,
+  .button-hero #Btn-konsonan {
+    padding: 10px 12px;
+    font-size: 0.875rem;
+  }
+
+  .Kumpulan-grid {
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    margin-left: 0;
+    justify-items: center;
+    gap: 16px;
+  }
+
+  .kotak {
+    box-sizing: border-box;
+    grid-row: auto;
+    width: min(200%, 400px);
+    height: 180px;
+    padding: 16px;
   }
 }
