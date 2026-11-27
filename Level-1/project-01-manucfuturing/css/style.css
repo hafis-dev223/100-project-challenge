@@ -32,50 +32,75 @@
   border: 1px solid rgb(255, 255, 255);
   grid-row: span 2;
   padding: 10px;
-  width: 250px;
-  height: 100px;
+  width: 280px;
+  height: 150px;
   border-radius: 10px;
 }
 
 .Kotak-1 {
-  background-color: rgb(130, 131, 132);
-  
+  background-color: rgb(10, 10, 10);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  justify-content: space-evenly;
 }
 
-.Kotak-1 h1{
-  font-weight: 400;
-  margin-top: 30px;
+.Kotak-1 h1 {
+  font-weight: 500;
+  font-size: 40px;
+}
 
+.kotak-1 p {
+  font-size: 10px;
 }
 
 .Kotak-2 {
-  background-color: rgb(1, 64, 141);
-  color: #ffffff;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  box-shadow: 0 3px 8px rgb(224, 222, 222);
+  border: none;
+  background-image: url("../image/container.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
   
 }
 
-.Kotak-3{
+.kotak-judul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+
+ 
+}
+
+.kotak-judul h1,h2{
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.Kotak-3 {
   background-color: rgb(5, 5, 5);
   color: #ffffff;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+ 
 }
 
-.Kotak-3 h1{
+.Kotak-3 h1 {
   font-weight: 300;
 }
 
-.Kotak-3 h2{
+.Kotak-3 h2 {
   font-size: 45px;
   font-weight: 500;
   color: #909090;
-
 }
-
-
-
 
 .container-hero {
   margin: 20px auto 30px auto;
@@ -259,6 +284,22 @@ body {
 
   #Tombol-Masuk {
     display: none;
+  }
+
+  .Kotak-1 {
+    background-color: rgb(10, 10, 10);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    gap: 12px;
+    padding: 24px;
+  }
+
+  .Kotak-1 h1 {
+    font-weight: 500;
+    font-size: 40px;
   }
 
   .Nav-hanpone.Aktif ul,
